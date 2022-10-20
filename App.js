@@ -1,10 +1,7 @@
-import { View } from "react-native";
-import Card from "./app/components/Card";
-import ViewImagesScreen from "./app/screens/ViewImagesScreen";
-import WelcomeScreen from "./app/screens/WelcomeScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
 
 const App = () => {
-  return <ViewImagesScreen />;
+  return <MessagesScreen />;
 };
 
 export default App;
