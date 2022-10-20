@@ -1,10 +1,12 @@
-import React from "react";
 import { View } from "react-native";
-import ViewImagesScreen from "./app/screens/ViewImagesScreen";
-import WelcomeScreen from "./app/screens/WelcomeScreen";
+import AppText from "./app/components/AppText";
 
 const App = () => {
-  return <ViewImagesScreen />;
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <AppText>hello</AppText>
+    </View>
+  );
 };
 
 export default App;
