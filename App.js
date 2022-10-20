@@ -1,16 +1,22 @@
 import {
   Alert,
   Button,
+  Dimensions,
   Platform,
   SafeAreaView,
   StatusBar,
   StyleSheet,
+  View,
 } from "react-native";
 
 export default function App() {
+  console.log(Dimensions.get("screen"));
+
   return (
     <SafeAreaView style={styles.container}>
-      <Button color="orange" title="Click Me" />
+      <View
+        style={{ backgroundColor: "blue", height: 70, width: "50%" }}
+      ></View>
     </SafeAreaView>
   );
 }
