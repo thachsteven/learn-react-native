@@ -2,13 +2,10 @@ import { View } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import AppText from "./app/components/AppText";
 import AppButton from "./app/components/AppButton";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 const App = () => {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <AppButton title="login" onPress={() => console.log("Tapped")} />
-    </View>
-  );
+  return <WelcomeScreen />;
 };
 
 export default App;
