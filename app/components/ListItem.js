@@ -15,9 +15,9 @@ function ListItem({
   title,
   subTitle,
   image,
-  IconComponent,
   onPress,
   renderRightActions,
+  IconComponent,
 }) {
   return (
     <GestureHandlerRootView>
