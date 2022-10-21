@@ -24,6 +24,7 @@ const initialMessages = [
 
 const MessagesScreen = () => {
   const [messages, setMessages] = useState(initialMessages);
+  const [refreshing, setRefreshing] = useState(false);
 
   const handleDelete = (message) => {
     setMessages(messages.filter((m) => m.id !== message.id));
@@ -46,6 +47,18 @@ const MessagesScreen = () => {
           />
         )}
         ItemSeparatorComponent={ListItemSeparator}
+        refreshing={refreshing}
+        onRefresh={() => {
+          setMessages([
+            {
+              id: 2,
+              title: "T2",
+              description: "D2",
+              image:
+                "https://i.picsum.photos/id/95/200/300.jpg?hmac=XW2T1mpTuATtTLyDvkvdQqgh2nodO9Zudo3dH2aXCBA",
+            },
+          ]);
+        }}
       />
     </Screen>
   );
