@@ -36,7 +36,7 @@ function ListItem({
             <View style={styles.detailsContainer}>
               <AppText style={styles.title}>{title}</AppText>
               {subTitle && (
-                <AppText style={styles.subTitle}>{subTitle}</AppText>
+                <AppText style={styles.subTitle}>zzxc{subTitle}</AppText>
               )}
             </View>
           </View>
